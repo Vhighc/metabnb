@@ -13,7 +13,7 @@ const Row01 = () => {
             <div className='p-[7px]'>
               <img src={img001} alt={img001} />
               <div className='flex border-2 border-solid border-[blue]'>
-                <div className='border-2 border-solid border-[pink]'>
+                <div className='border-2 border-solid border-[pink] basis-[40%]'>
                   <p className='text-[12px] text-[#434343] font-[400]'>Desert King</p>
                   <p className='text-[12px] text-[#434343] font-[400]'>2345km away</p>
                   <div className='flex'>
@@ -24,21 +24,78 @@ const Row01 = () => {
                     <img src={Star} alt={Star} />
                   </div>
                 </div>
-                <div className="">
-                  <p className='text-left text-[12px] text-[#434343] font-[700]'>1MBT per night</p>
-                  <p className='text-left text-[12px] text-[#434343] font-[400]'>available for 2weeks stay</p>
+                <div className=" border-2 border-solid border-[purple] basis-[60%]">
+                  <p className='text-end  text-[12px] text-[#434343] font-[700]'>1MBT per night</p>
+                  <p className='text-end  text-[12px] text-[#434343] font-[400]'>available for 2weeks stay</p>
                 </div>
               </div>
             </div>
           </div>
-          <div>
-            <img src={img002} alt={img002} />
+          <div className="rounded-[15px] border-2 border-solid border-[orange]">
+            <div className='p-[7px]'>
+              <img src={img002} alt={img002} />
+              <div className='flex border-2 border-solid border-[blue]'>
+                <div className='border-2 border-solid border-[pink] basis-[40%]'>
+                  <p className='text-[12px] text-[#434343] font-[400]'>Desert King</p>
+                  <p className='text-[12px] text-[#434343] font-[400]'>2345km away</p>
+                  <div className='flex'>
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                  </div>
+                </div>
+                <div className="basis-[60%]">
+                  <p className='text-end text-[12px] text-[#434343] font-[700]'>1MBT per night</p>
+                  <p className='text-end text-[12px] text-[#434343] font-[400]'>available for 2weeks stay</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={img003} alt={img003} />
+          <div className="rounded-[15px] border-2 border-solid border-[orange]">
+            <div className='p-[7px]'>
+              <img src={img003} alt={img003} />
+              <div className='flex border-2 border-solid border-[blue]'>
+                <div className='border-2 border-solid border-[pink] basis-[40%]'>
+                  <p className='text-[12px] text-[#434343] font-[400]'>Desert King</p>
+                  <p className='text-[12px] text-[#434343] font-[400]'>2345km away</p>
+                  <div className='flex'>
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                  </div>
+                </div>
+                <div className="basis-[60%]">
+                  <p className='text-end text-[12px] text-[#434343] font-[700]'>1MBT per night</p>
+                  <p className='text-center text-[12px] text-[#434343] font-[400]'>available for 2weeks stay</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={img004} alt={img004} />
+          <div className="rounded-[15px] border-2 border-solid border-[orange]">
+            <div className='p-[7px]'>
+              <img src={img004} alt={img004} />
+              <div className='flex border-2 border-solid border-[blue]'>
+                <div className='border-2 border-solid border-[pink] basis-[40%]'>
+                  <p className='text-[12px] text-[#434343] font-[400]'>Desert King</p>
+                  <p className='text-[12px] text-[#434343] font-[400]'>2345km away</p>
+                  <div className='flex'>
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                    <img src={Star} alt={Star} />
+                  </div>
+                </div>
+                <div className="basis-[60%]">
+                  <p className='text-end text-[12px] text-[#434343] font-[700]'>1MBT per night</p>
+                  <p className='text-center text-[12px] text-[#434343] font-[400]'>available for 2weeks stay</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
