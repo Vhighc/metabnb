@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  li {
+    @apply p-4
+  }
+
+  button{
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+  }
+ 
+}
+body {
+  font-family: 'Red Rose', cursive;
+} 
+
+#secI{
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+}
