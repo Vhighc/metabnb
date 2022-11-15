@@ -3,6 +3,7 @@ import Scroll from "react-scroll";
 import { Link } from 'react-router-dom';
 import HIcon from '../asset/images/metaIcon.svg';
 import MbIcon from '../asset/images/bnbIcon.svg';
+import Modal from '../Modal';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const ScrollLink = Scroll.Link;
@@ -10,6 +11,7 @@ const ScrollLink = Scroll.Link;
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
+    const [openModal, setOpenModal] = useState(false)
     const handleClick = () => setNav(!nav)
 
     const handleClose =()=> setNav(!nav)
@@ -28,7 +30,8 @@ const Navbar = () => {
           <li className='text-[#434343] font-normal text-[20px]'><ScrollLink to="community" smooth={true} offset={-100} duration={500}>Community</ScrollLink></li>
           </ul>
         <div>
-         <button className='relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Get Started</button>
+         <button onClick={() => setOpenModal(true)} className='relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Get Started</button>
+         
         <div className='md:hidden' onClick={handleClick}>
           {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          
         </div>
@@ -45,6 +48,7 @@ const Navbar = () => {
             <button className='px-8 py-3'>Sign Up</button>
         </div>
       </ul>
+      <Modal open={openModal} />
     </div>
   );
 };

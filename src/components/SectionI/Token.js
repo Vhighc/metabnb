@@ -6,7 +6,7 @@ import token3 from '../asset/images/openSea.svg';
 
 const Token = () => {
   return (
-    <div id="secI">
+    <div id="bgImg">
       <div className=" w-[80%] mx-[auto] justify-between flex border-2 border-solid border-[yellow]">
         <div className='flex'>
             <img src={token1} alt={token1} />
