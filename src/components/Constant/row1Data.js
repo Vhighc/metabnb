@@ -7,7 +7,7 @@ import Star from "../asset/images/Star.svg";
 
 
 
-export const data = [
+export const row1Data = [
         {
           id: '1',
           name: 'Desert King',

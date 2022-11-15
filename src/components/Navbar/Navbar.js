@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import Scroll from "react-scroll";
-import { Link } from 'react-router-dom';
+// import Scroll from "react-scroll";
+// import { Link } from 'react-router-dom';
 import HIcon from '../asset/images/metaIcon.svg';
 import MbIcon from '../asset/images/bnbIcon.svg';
 import Modal from '../Modal';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
-const ScrollLink = Scroll.Link;
+// const ScrollLink = Scroll.Link;
 
 const Navbar = () => {
 
@@ -18,20 +18,19 @@ const Navbar = () => {
 
   return (
     <div className=' '>
-      <div className='mx-[5%] mt-[2.5%] justify-between flex'>
+      <div className='mx-[5%] mt-[2.5%] justify-between flex mb-[7%]'>
           <div className='flex'>
           <img className='h-[36.37px] w-[41.99px] relative top-2' src={HIcon} alt={HIcon} />
           <img className='h-[32.19px] w-[188.1px] relative top-3' src={MbIcon} alt={MbIcon} />
           </div>
           <ul className='flex'>
-          <li className='text-[#434343] font-normal text-[20px]'><ScrollLink to="hero" smooth={true} duration={500}>Home</ScrollLink></li>
-          <li className='text-[#434343] font-normal text-[20px]'><ScrollLink to="places" smooth={true} offset={-200} duration={500}>Place to stay</ScrollLink></li>
-          <li className='text-[#434343] font-normal text-[20px]'><ScrollLink to="nfts" smooth={true} offset={-50} duration={500}>NFTs</ScrollLink></li>
-          <li className='text-[#434343] font-normal text-[20px]'><ScrollLink to="community" smooth={true} offset={-100} duration={500}>Community</ScrollLink></li>
+          <li className='text-[#434343] font-normal text-[20px]'>Home</li>
+          <li className='text-[#434343] font-normal text-[20px]'>Place to stay</li>
+          <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">NFTs</a></li>
+          <li className='text-[#434343] font-normal text-[20px]'>Community</li>
           </ul>
         <div>
-         <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Get Started</button>
-         
+         <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Connect wallet</button>       
         <div className='md:hidden' onClick={handleClick}>
           {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          
         </div>
@@ -39,16 +38,15 @@ const Navbar = () => {
       </div>
 
       <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="hero" smooth={true} duration={500}>Home</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="places" smooth={true} offset={-200} duration={500}>Place to stay</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="nfts" smooth={true} offset={-50} duration={500}>NFTs</Link></li>
-          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="community" smooth={true} offset={-100} duration={500}>Community</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'>Home</li>
+          <li className='border-b-2 border-zinc-300 w-full'>Place to stay</li>
+          <li className='border-b-2 border-zinc-300 w-full'>NFTs</li>
+          <li className='border-b-2 border-zinc-300 w-full'>Community</li>
         <div className='flex flex-col my-4'>
-            <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
-            <button className='px-8 py-3'>Sign Up</button>
+            <button className='px-8 py-3'>Connect wallet</button>
         </div>
       </ul>
-      <Modal open={openModal} />
+      {/* <Modal open={openModal} /> */}
     </div>
   );
 };
