@@ -1,15 +1,12 @@
-import Navbar from '../components/Navbar/Navbar'
-import SecII from '../components/SecII/Row01'
-import Learnmore from '../components/Learnmore'
+import NftRow1 from '../components/NftRow/NftRow1'
+// import Tabs from '..';
+
+
 
 const Nfts = () => {
   return (
     <div>
-      <div>
-        <Navbar />
-        <SecII />
-        <Learnmore />
-      </div>
+        <NftRow1 /> 
     </div>
   )
 }
