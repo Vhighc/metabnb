@@ -30,7 +30,7 @@ const Navbar = () => {
           <li className='text-[#434343] font-normal text-[20px]'><ScrollLink to="community" smooth={true} offset={-100} duration={500}>Community</ScrollLink></li>
           </ul>
         <div>
-         <button onClick={() => setOpenModal(true)} className='relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Get Started</button>
+         <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Get Started</button>
          
         <div className='md:hidden' onClick={handleClick}>
           {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          

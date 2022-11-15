@@ -1,8 +1,8 @@
-import img005 from "./components/asset/images/MBLPImg05.svg";
-import img006 from "./components/asset/images/MBLPImg06.svg";
-import img007 from "./components/asset/images/MBLPImg07.svg";
-import img008 from "./components/asset/images/MBLPImg08.svg";
-import Star from "./components/asset/images/Star.svg";
+import img005 from "../asset/images/MBLPImg05.svg";
+import img006 from "../asset/images/MBLPImg06.svg";
+import img007 from "../asset/images/MBLPImg07.svg";
+import img008 from "../asset/images/MBLPImg08.svg";
+import Star from "../asset/images/Star.svg";
 
 
 
