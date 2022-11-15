@@ -1,5 +1,5 @@
 import NftRow1 from '../components/NftRow/NftRow1'
-// import Tabs from '..';
+// import Tabs from '../';
 
 
 
