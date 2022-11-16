@@ -15,7 +15,7 @@ const Landing = (props) => {
         <div className='mt-[5%]'>
         <SecI />  
         </div>
-        <h1 className='mt-[3%] mb-[3%] text-center text-[48px] font-[700]'>{title}</h1>
+        <h1 className='mt-[3%] mb-[3%] text-center text-[48px] font-[700] max-[768px]:text-[30px]'>{title}</h1>
         <SecII nfts={nfts}/>
         <div className='mt-[5%]'>
         <Learnmore />

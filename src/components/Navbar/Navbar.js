@@ -22,15 +22,15 @@ const Navbar = () => {
           <img className='h-[36.37px] w-[41.99px] relative top-2' src={HIcon} alt={HIcon} />
           <img className='h-[32.19px] w-[188.1px] relative top-3' src={MbIcon} alt={MbIcon} />
           </div>
-          <ul className='flex max-md:hidden'>
+          <ul className='flex max-lg:hidden'>
           <li className='text-[#434343] font-normal text-[20px]'>Home</li>
           <li className='text-[#434343] font-normal text-[20px]'>Place to stay</li>
           <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">NFTs</a></li>
           <li className='text-[#434343] font-normal text-[20px]'>Community</li>
           </ul>
-        <div className='max-md:hidden'>
+        <div className='max-lg:hidden'>
          <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal max-md:hidden'>Connect wallet</button>       
-        <div className='hidden md:flex' onClick={handleClick}>
+        <div className='hidden max-sm:flex' onClick={handleClick}>
           {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          
         </div>
         </div>

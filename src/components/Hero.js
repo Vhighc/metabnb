@@ -9,10 +9,10 @@ const Hero = () => {
     <div id="z_in">
       <div className="mx-[5%]">
       {/* <div  className="flex border-2 border-solid border-[green]"> */}
-      <div  className="flex flex-wrap">
+      <div  className="flex flex-wrap max-[768px]:block">
         <div className="basis-[57%] ">
           <div>
-            <h2 className="text-[#434343] text-[56px] font-bold max-sm:text[30px]">
+            <h2 className="text-[#434343] text-[56px] font-bold min-sm:text[30px]">
               Rent a
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A02279] to-[#A02279]">
                 {" "}

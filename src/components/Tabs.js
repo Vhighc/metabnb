@@ -4,7 +4,7 @@ const Tabs = () => {
   return (
     <div>
         <div className='mx-[5%] mb-[4%]'>
-        <div className='w-[95%] flex justify-between'>
+        <div className='w-[95%] flex justify-between flex-wrap'>
             <p className='text-[20px] font-[400] text-[#434343]'>Resturant</p>
             <p className='text-[20px] font-[400] text-[#434343]'>Cottage</p>
             <p className='text-[20px] font-[400] text-[#434343]'>Castle</p>
