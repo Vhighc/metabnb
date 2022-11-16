@@ -6,7 +6,7 @@ import Hero4 from "./asset/images/heroImg04.svg";
 const Hero = () => {
   return (
     // <div className="border-2 border-solid border-[yellow]">
-    <div className="">
+    <div id="z_in">
       <div className="mx-[5%]">
       {/* <div  className="flex border-2 border-solid border-[green]"> */}
       <div  className="flex">

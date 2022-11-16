@@ -1,16 +1,13 @@
 import React, {useState} from 'react';
-// import Scroll from "react-scroll";
-// import { Link } from 'react-router-dom';
-import HIcon from '../asset/images/metaIcon.svg';
-import MbIcon from '../asset/images/bnbIcon.svg';
 import Modal from '../Modal';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
-// const ScrollLink = Scroll.Link;
+
 
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
+   
     const [openModal, setOpenModal] = useState(false)
     const handleClick = () => setNav(!nav)
 
@@ -30,23 +27,23 @@ const Navbar = () => {
           <li className='text-[#434343] font-normal text-[20px]'>Community</li>
           </ul>
         <div>
-         <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal'>Connect wallet</button>       
-        <div className='md:hidden' onClick={handleClick}>
+         <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal max-md:hidden'>Connect wallet</button>       
+        <div className='hidden md:flex' onClick={handleClick}>
           {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          
         </div>
         </div>
       </div>
 
       <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
-          <li className='border-b-2 border-zinc-300 w-full'>Home</li>
-          <li className='border-b-2 border-zinc-300 w-full'>Place to stay</li>
-          <li className='border-b-2 border-zinc-300 w-full'>NFTs</li>
-          <li className='border-b-2 border-zinc-300 w-full'>Community</li>
-        <div className='flex flex-col my-4'>
-            <button className='px-8 py-3'>Connect wallet</button>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Home</li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Place to stay</li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>NFTs</li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Community</li>
+        <div className=''>
+            <button className=''>Connect wallet</button>
         </div>
       </ul>
-      {/* <Modal open={openModal} /> */}
+      <Modal open={openModal} onClose={() => setOpenModal(false)}  />
     </div>
   );
 };
