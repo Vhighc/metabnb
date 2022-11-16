@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='bg-[#1D1D1E] pt-[3%] p-[2%] px-[5%]'>
       {/* <footer className="flex border-[green] border-[2px] border-solid"> */}
-      <footer className="flex">
+      <footer className="flex flex-wrap">
         {/* <div className="border-[red] border-[2px] border-solid basis-[35%]"> */}
         <div className="basis-[35%]">
           <div className='mb-[20%]'>

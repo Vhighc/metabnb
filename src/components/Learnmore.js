@@ -3,7 +3,7 @@ import LearnImg from "../components/asset/images/learnMoreImg.svg";
 const Learnmore = () => {
   return (
     <div id="bgImg" className='border-[1px] border-solid border-[#000000] px-[5%] py-[4%]'>
-      <div className='flex justify-between'>
+      <div className='flex justify-between flex-wrap'>
       {/* <div className='flex justify-between border-[1px] border-solid border-[yellow]'> */}
         <div className='basis-[38%] flex'>
         {/* <div className='basis-[38%] flex border-[1px] border-solid border-[red]'> */}
