@@ -8,7 +8,7 @@ const Row02 = ({nfts}) => {
             <div className="w-[98.5%] flex justify-between flex-wrap">
             {/* <div className="w-[98.5%] flex border-2 border-solid border-[green] justify-between"> */}
       {nfts.map((nft) => (
-            <div key={nft.id} className="max-[768px]:mb-[1%] rounded-[15px] border-[1px] border-solid border-[#D7D7D7]">
+            <div key={nft.id} className="max-[768px]:mb-[2%] rounded-[15px] border-[1px] border-solid border-[#D7D7D7]">
             <div className='p-[10px]'>
               <img className='mb-[2%]' src={nft.image} alt={nft.image} />
               <div className='flex'>

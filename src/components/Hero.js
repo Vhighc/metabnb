@@ -12,7 +12,7 @@ const Hero = () => {
       <div  className="flex flex-wrap max-[768px]:block">
         <div className="basis-[57%] ">
           <div>
-            <h2 className="text-[#434343] text-[56px] font-bold min-sm:text[30px]">
+            <h2 className="text-[#434343] text-[56px] font-bold max-[768px]:text-[30px]">
               Rent a
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A02279] to-[#A02279]">
                 {" "}
@@ -29,14 +29,14 @@ const Hero = () => {
                 Metaverse
               </span>
             </h2>
-            <p className="text-[24px] text-[#434343] font-normal mt-[4%]">
+            <p className="text-[24px] text-[#434343] font-normal mt-[4%] max-[768px]:text-[20px]">
                 we provide you access to luxury and affordable houses in the
                 metaverse, get a chance to turn your imagination to reality at
                 your comfort zone
             </p>
-            <div className="mt-[5%]">
-            <input className="pl-[2%] w-[390px] h-[54px] border-[1px] border-solid border-[#A3A3A3] font-normal text-[14px] placeholder:text-[#B8B8B8]" type="text" placeholder="Search for location" />
-            <input className='w-[230px] h-[54px] rounded-r-[8px] text-[#FFFFFF] text-[16px] font-normal bg-gradient-to-r from-[#A02279] to-[#A02279]' type="button" value="Search" />
+            <div className="mt-[5%] max-[768px]:mb-[20px]">
+            <input className="pl-[2%] w-[390px] max-[768px]:w-[50%] h-[54px] border-[1px] border-solid border-[#A3A3A3] font-normal text-[14px] placeholder:text-[#B8B8B8]" type="text" placeholder="Search for location" />
+            <input className='w-[230px] h-[54px]  max-[768px]:w-[25%] rounded-r-[8px] text-[#FFFFFF] text-[16px] font-normal bg-gradient-to-r from-[#A02279] to-[#A02279]' type="button" value="Search" />
             </div>
           </div>
         </div>

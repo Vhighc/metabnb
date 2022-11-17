@@ -11,7 +11,7 @@ const NftRow1 = () => {
        <div  className="mx-[5%] mb-[1%]">
             <div className="w-[98.5%] flex justify-between flex-wrap">
       {row22Data.map((item) => (
-            <div key={item.id} className="rounded-[15px] border-[1px] border-solid border-[#D7D7D7]">
+            <div key={item.id} className="max-[768px]:mb-[2%] rounded-[15px] border-[1px] border-solid border-[#D7D7D7]">
             <div className='p-[10px]'>
               <img className='mb-[2%]' src={item.image} alt={item.image} />
               <div className='flex'>

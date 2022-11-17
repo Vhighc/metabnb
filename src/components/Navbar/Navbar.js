@@ -24,25 +24,26 @@ const Navbar = () => {
           </div>
           <ul className='flex max-lg:hidden'>
           <li className='text-[#434343] font-normal text-[20px]'>Home</li>
-          <li className='text-[#434343] font-normal text-[20px]'>Place to stay</li>
+          <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">Place to stay</a></li>
           <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">NFTs</a></li>
-          <li className='text-[#434343] font-normal text-[20px]'>Community</li>
+          <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">Community</a></li>
           </ul>
         <div className='max-lg:hidden'>
          <button onClick={() => setOpenModal(true)} className='bg-[#A02279] relative top-1 w-[170px] h-[48px] rounded-[10px] border-hidden text-[#FFFFFF] text-[16px] font-normal max-md:hidden'>Connect wallet</button>       
-        <div className='hidden max-sm:flex' onClick={handleClick}>
-          {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          
+        {/* <div className='md:hidden mr-4' onClick={handleClick}> */}
         </div>
+        <div className='hidden mr-4 max-[768px]:flex' onClick={handleClick}>
+          {!nav ? <Bars3Icon className='w-5' /> : <XMarkIcon className='w-5' />}          
         </div>
       </div>
 
       <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
           <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Home</li>
-          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Place to stay</li>
-          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>NFTs</li>
-          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Community</li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">Place to stay</a></li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">NFTs</a></li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">Community</a></li>
         <div className=''>
-            <button className=''>Connect wallet</button>
+            <button className='bg-[#A02279]  px-8 py-3 text-[#FFFFFF] text-[16px] font-normal rounded-[10px]'>Connect wallet</button>
         </div>
       </ul>
       <Modal open={openModal} onClose={() => setOpenModal(false)}  />

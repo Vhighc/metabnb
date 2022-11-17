@@ -11,7 +11,7 @@ const Footer = () => {
       {/* <footer className="flex border-[green] border-[2px] border-solid"> */}
       <footer className="flex flex-wrap max-[768px]:block">
         {/* <div className="border-[red] border-[2px] border-solid basis-[35%]"> */}
-        <div className="basis-[35%]">
+        <div className="basis-[35%] max-[768px]:mb-[10px]">
           <div className='mb-[20%]'>
             <img src={footerLogo} alt={footerLogo} />
           </div>
