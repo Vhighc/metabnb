@@ -43,7 +43,7 @@ const Navbar = () => {
           <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">NFTs</a></li>
           <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">Community</a></li>
         <div className=''>
-            <button className='bg-[#A02279]  px-8 py-3 text-[#FFFFFF] text-[16px] font-normal rounded-[10px]'>Connect wallet</button>
+            <button onClick={() => setOpenModal(true)} className='bg-[#A02279]  px-8 py-3 text-[#FFFFFF] text-[16px] font-normal rounded-[10px]'>Connect wallet</button>
         </div>
       </ul>
       <Modal open={openModal} onClose={() => setOpenModal(false)}  />
