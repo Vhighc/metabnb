@@ -23,7 +23,7 @@ const Navbar = () => {
           <img className='h-[32.19px] w-[188.1px] relative top-3' src={MbIcon} alt={MbIcon} />
           </div>
           <ul className='flex max-lg:hidden'>
-          <li className='text-[#434343] font-normal text-[20px]'>Home</li>
+          <li className='text-[#434343] font-normal text-[20px]'><a href="/">Home</a></li>
           <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">Place to stay</a></li>
           <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">NFTs</a></li>
           <li className='text-[#434343] font-normal text-[20px]'><a href="/nfts">Community</a></li>
@@ -38,7 +38,7 @@ const Navbar = () => {
       </div>
 
       <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
-          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'>Home</li>
+          <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/">Home</a></li>
           <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">Place to stay</a></li>
           <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">NFTs</a></li>
           <li onClick={handleClose} className='border-b-2 border-zinc-300 w-full'><a href="/nfts">Community</a></li>
